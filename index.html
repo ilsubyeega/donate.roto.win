@@ -1,0 +1,158 @@
+<head>
+    <title>Donate roto.win</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+
+    <style>
+        body {
+            font-family: 'Pretendard Variable';
+            color: white;
+        }
+        
+        video {
+            filter: blur(3vh);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+            object-fit: cover;
+            opacity: 0.8
+        }
+        
+        main {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        main main-text {
+            font-weight: 300;
+            font-size: 36px;
+        }
+        
+        main main-text url {
+            font-weight: 100;
+        }
+        
+        main text {
+            font-size: 18px;
+        }
+        
+        main buttons {
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        main buttons a {
+            transition: opacity 0.2s ease-in-out, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+            width: 280px;
+            height: 40px;
+            background: white;
+            opacity: 0.8;
+            box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(130px);
+            border-radius: 5rem;
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 380px) {
+            main buttons a {
+                gap: 10px;
+                flex-direction: column;
+                padding-bottom: 20px;
+                width: 200px;
+            }
+        }
+        
+        main buttons a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        main buttons a:active {
+            transform: scale(.95);
+            opacity: 0.7;
+        }
+        
+        main buttons a icon img {
+            width: auto;
+            height: 20px;
+        }
+        
+        .color-toss {
+            color: #008AD3;
+        }
+        
+        .color-paypal {
+            color: #0064FF;
+        }
+        
+        warn {
+            display: flex;
+            font-weight: 100;
+            opacity: .8;
+            font-size: 14px;
+            gap: 10px;
+        }
+        
+        warn a {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        warn a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        
+        underline {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <warn>
+        <a href="https://github.com/ilsubyeega/donate.roto.win">Source</a> This site links to Paypal and toss webpages,
+        <underline>not partnering</underline> with the company.
+    </warn>
+    <main>
+        <main-text>Donate
+            <url>roto.win</url>
+        </main-text>
+        <text>Your donation helps the site's operation and owner.</text>
+
+        <buttons>
+            <a class="color-paypal" href="https://paypal.me/ilsubyeega">
+                <icon><img src="assets/logo-toss-blue.png"></icon>
+                <url>paypal.me/ilsubyeega</url>
+            </a>
+
+            <a class="color-toss" href="https://toss.me/graphic">
+                <icon><img src="assets/pp-logo-200px.png"></icon>
+                <url>toss.me/graphic</url>
+            </a>
+        </buttons>
+
+    </main>
+
+    <video-background>
+        <video autoplay loop muted src="assets/background.mp4"></video>
+    </video-background>
+</body>
